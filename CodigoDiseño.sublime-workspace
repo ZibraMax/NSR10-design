@@ -1,0 +1,294 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"matrizA"
+			],
+			[
+				"vec",
+				"vectorC"
+			],
+			[
+				"matri",
+				"matrizTridiagonal"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"fo",
+				"for\tfor (…) {…}"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ReinforcedPy/__init__.py",
+			"settings":
+			{
+				"buffer_size": 21,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"guna",
+				"Guna"
+			],
+			[
+				"ayu",
+				"ayu: Activate theme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"olorsub",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 192.0,
+		"history":
+		[
+			"-cl",
+			"clear"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Luis Eduardo Jr/Desktop/GitHub/NSR10-design/LICENSE",
+		"/C/Users/Luis Eduardo Jr/Desktop/NSR10/NSR10-design/README.md",
+		"/C/Users/Luis Eduardo Jr/Desktop/Federado/Zona2_Export.$2k",
+		"/C/Users/Luis Eduardo Jr/Desktop/Federado/Zona2_Export.exr",
+		"/C/Users/Luis Eduardo Jr/Desktop/ddddd/MANLets-46d0595894757a464fbadf43a9cdc3cdca685b13/Biseccion/index.html",
+		"/C/Users/Luis Eduardo Jr/Desktop/aRTURO/CodeForces/input.txt",
+		"/C/Users/Luis Eduardo Jr/Desktop/CodeForces/pa.py",
+		"/C/Users/Luis Eduardo Jr/Downloads/MAMAGUEBO_-_copia_-_copia_-_copia_-_copia_4.rtf",
+		"/C/Users/Luis Eduardo Jr/Desktop/CargarATrimble/Zona4.ifc",
+		"/C/Users/Luis Eduardo Jr/Desktop/Federado/Checkpoints/Zona1.EXRLog",
+		"/C/Users/Luis Eduardo Jr/Downloads/Nueva carpeta (2)/.exe",
+		"/C/Users/Luis Eduardo Jr/Desktop/aRTURO/pC.py",
+		"/C/Users/Luis Eduardo Jr/Desktop/aRTURO/CodeForces/Problema_A.txt",
+		"/C/Users/Luis Eduardo Jr/Desktop/aRTURO/crearDatasets_luis.py",
+		"/C/Users/Luis Eduardo Jr/Desktop/Analisis Avanzado/Codigo/PySections/dsds",
+		"/C/Users/Luis Eduardo Jr/Desktop/BlocNota/test.ipynb",
+		"/C/Users/Luis Eduardo Jr/Desktop/Analisis Avanzado/Codigo/PySections/PySections/__init__.py",
+		"/C/Users/Luis Eduardo Jr/Desktop/Septimo semestre/Analisis Avanzado/Codigo/PySections/PySections/__init__.py",
+		"/C/Users/Luis Eduardo Jr/Desktop/ClasesArturo/index.html"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"todo ",
+			" todo ",
+			"todo "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ReinforcedPy/__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 193.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "CodigoDiseño.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
