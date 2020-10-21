@@ -31,9 +31,37 @@
 			"file": "ReinforcedPy/__init__.py",
 			"settings":
 			{
-				"buffer_size": 21,
+				"buffer_size": 24,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ReinforcedPy/Elemento.py",
+			"settings":
+			{
+				"buffer_size": 341,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "import numpy as np\nimport matplotlib.pyplot as plt \nimport ReinforcedPy as rp \n\nviga=rp.Elemento(1,2,3,4)\nx=np.linspace(0,rp.longitud)\nplt.plot(x: ,y)",
+			"file": "prueba.py",
+			"file_size": 0,
+			"file_write_time": 132477912024399902,
+			"settings":
+			{
+				"buffer_size": 150,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 84,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -65,6 +93,14 @@
 		"selected_items":
 		[
 			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
 				"guna",
 				"Guna"
 			],
@@ -79,10 +115,6 @@
 			[
 				"olorsub",
 				"Colorsublime: Install Theme"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"instal",
@@ -113,8 +145,16 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/Luis Eduardo Jr/Desktop/GitHub/NSR10-design",
+		"/C/Users/Luis Eduardo Jr/Desktop/GitHub/NSR10-design/ReinforcedPy"
+	],
 	"file_history":
 	[
+		"/C/Users/Luis Eduardo Jr/Desktop/GitHub/NSR10-design/CodigoDiseño.sublime-project",
+		"/C/Users/Luis Eduardo Jr/Desktop/GitHub/NSR10-design/gitignore",
+		"/C/Users/Luis Eduardo Jr/Desktop/GitHub/NSR10-design/.gitignore",
 		"/C/Users/Luis Eduardo Jr/Desktop/GitHub/NSR10-design/LICENSE",
 		"/C/Users/Luis Eduardo Jr/Desktop/NSR10/NSR10-design/README.md",
 		"/C/Users/Luis Eduardo Jr/Desktop/Federado/Zona2_Export.$2k",
@@ -171,7 +211,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -180,15 +220,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 21,
+						"buffer_size": 24,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								21,
-								21
+								24,
+								24
 							]
 						],
 						"settings":
@@ -199,7 +239,104 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ReinforcedPy/Elemento.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								66
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "prueba.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								150
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric, meta.interpolated.format.fstring"
+								}
+							],
+							"open_with_edit": true,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": ".gitignore",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 84,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -211,7 +348,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 53.0
 	},
 	"layout":
 	{
