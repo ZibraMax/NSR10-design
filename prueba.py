@@ -17,6 +17,6 @@ plt.xlabel('Distancia [m]')
 plt.ylabel(r'$\rho$')
 plt.title('Gráfica de Cuantías')
 plt.show()
-
+print(acero420.varillas[0]['A'])
 
 
