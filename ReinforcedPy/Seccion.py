@@ -1,4 +1,7 @@
 import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+
 class Seccion():
 	def __init__(self,b,h,varillas,concreto,orientacion=1):
 		self.varillas = varillas
@@ -84,7 +87,11 @@ class Seccion():
 		Mn = self.momento(c)
 		return Mn,Mn*self.phi
 
-
-
-
-		
+	def dibujar(self):
+		fig = plt.gca()
+		rect = mpatches.Rectangle((0, 0), self.b, self.h, fill=False)
+		fig.add_patch(rect)
+		for barra in self.varillas:
+			dibujoBarra = mpatches.Circle((barra['X'],barra['Y']), barra['varilla'].diametro)
+			fig.add_patch(dibujoBarra)
+		plt.show()
