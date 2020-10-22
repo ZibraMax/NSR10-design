@@ -17,6 +17,20 @@ class Seccion():
 			else:
 				ps += (varilla['e']>0)*var.area*varilla['f']
 		return ps+pc
+
+	def momento(self, c, compresion=False):
+		self.deformaciones(c)
+		a = self.concreto.b1*c
+		mc = 0.85*(self.concreto.fc*1000)*self.b*a*(self.h/2-a/2)
+		ms = 0
+		for varilla in self.varillas:
+			var = varilla['varilla']
+			if compresion:
+				ms += var.area*var.material.E*varilla['e']*(self.h/2-varilla['Y'])
+			else:
+				ms += (varilla['e']>0)*var.area*varilla['f']*(self.h/2-varilla['Y'])
+		return ms+mc
+
 	def calcularPhi(self):
 		deformaciones = []
 		for varilla in self.varillas:
@@ -62,8 +76,10 @@ class Seccion():
 		return xr
 
 	def momentoNominal(self):
-		#EncontrarC
-		pass
+		c = self.encontrarC()
+		Mn = self.momento(c)
+		return Mn,Mn*self.phi
+
 
 
 
