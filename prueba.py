@@ -2,9 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import ReinforcedPy as rp 
 
+coordenadasY=0.54
 concreto28 = rp.Concreto()
 acero420 = rp.AceroRefuerzo()
-varillas = [{'X': 0.06,'Y':0.06,'varilla': rp.Varilla(acero420,6)}]*10
+varillas = [{'X': 0.06,'Y':0.54,'varilla': rp.Varilla(acero420,6)}]*9+[{'X': 0.06,'Y':0.54,'varilla': rp.Varilla(acero420,6)}]
+
 
 viga=rp.Elemento(0.3,0.6,[concreto28,acero420],6)
 viga.generarDesdeCarga(50)
@@ -18,6 +20,6 @@ plt.xlabel('Distancia [m]')
 plt.ylabel(r'$\rho$')
 plt.title('Gráfica de Cuantías')
 
-seccion = rp.Seccion(0.3,0.6,varillas,concreto28)
+seccion = rp.Seccion(0.3,0.6,varillas,concreto28,orientacion=-1)
 print(seccion.encontrarC())
 print(seccion.momentoNominal())
