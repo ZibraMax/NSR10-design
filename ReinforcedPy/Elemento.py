@@ -42,26 +42,26 @@ class Elemento:								#TODO Clase viga
 		varillas = [{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base/2,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': (self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 2*(self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)}]
+		{'X': 0.06+(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06+2*(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)},
+		{'X': self.base-0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)}]
 		seccionTerciorsDer = Seccion(self.base,self.altura,varillas,self.materiales[0],posicion=1/3,orientacion=1)
 		varillas = [{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base/2,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': (self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 2*(self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)}]
+		{'X': 0.06+(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06+2*(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)},
+		{'X': self.base-0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)}]
 		seccionLuzMediosIzq = Seccion(self.base,self.altura,varillas,self.materiales[0],posicion=0.5,orientacion=1)
 		varillas = [{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base/2,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': (self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 2*(self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)}]
+		{'X': 0.06+(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06+2*(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)},
+		{'X': self.base-0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)}]
 		seccionLuzMediosDer = Seccion(self.base,self.altura,varillas,self.materiales[0],posicion=0.5,orientacion=1)
 
 		self.secciones = [seccionApoyo,seccionTerciorsIzq,seccionTerciorsDer,seccionLuzMediosIzq]
@@ -81,26 +81,26 @@ class Elemento:								#TODO Clase viga
 		varillas = [{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base/2,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': (self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 2*(self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)}]
+		{'X': 0.06+(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06+2*(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)},
+		{'X': self.base-0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)}]
 		seccionTerciorsDer = Seccion(self.base,self.altura,varillas,self.materiales[0],posicion=1-1/3,orientacion=1)
 		varillas = [{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base/2,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': (self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 2*(self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)}]
+		{'X': 0.06+(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06+2*(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)},
+		{'X': self.base-0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)}]
 		seccionLuzMediosIzq = Seccion(self.base,self.altura,varillas,self.materiales[0],posicion=0.5,orientacion=1)
 		varillas = [{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base/2,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
 		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': (self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 2*(self.base+0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],4)},
-		{'X': 0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)},
-		{'X': self.base-0.06,'Y':0.06,'varilla': Varilla(self.materiales[1],8)}]
+		{'X': 0.06+(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06+2*(self.base-2*0.06)/3,'Y':0.06,'varilla': Varilla(self.materiales[1],6)},
+		{'X': 0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)},
+		{'X': self.base-0.06,'Y':0.54,'varilla': Varilla(self.materiales[1],8)}]
 		seccionLuzMediosDer = Seccion(self.base,self.altura,varillas,self.materiales[0],posicion=0.5,orientacion=1)
 
 		self.secciones+=[seccionLuzMediosDer,seccionTerciorsDer,seccionTerciorsIzq,seccionApoyo]
