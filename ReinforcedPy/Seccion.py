@@ -1,11 +1,12 @@
 import numpy as np
 class Seccion():
-	def __init__(self,b,h,varillas,concreto,orientacion=1):
+	def __init__(self,b,h,varillas,concreto,posicion=-1,orientacion=1):
 		self.varillas = varillas
 		self.b = b
 		self.h = h
 		self.concreto = concreto
 		self.orientacion = orientacion
+		self.posicion = posicion
 		if self.orientacion == -1:
 			for barra in self.varillas:
 				barra['Y']=self.h-barra['Y']
@@ -82,9 +83,5 @@ class Seccion():
 	def momentoNominal(self):
 		c = self.encontrarC()
 		Mn = self.momento(c)
-		return Mn,Mn*self.phi
-
-
-
-
+		return Mn*self.orientacion,Mn*self.phi*self.orientacion
 		
