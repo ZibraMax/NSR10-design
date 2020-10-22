@@ -1,8 +1,7 @@
 import numpy as np
 
 class Elemento:								#TODO Clase viga
-
-	def __init__ (self,base,altura,materiales,longitud): #TODO replantear parámetros (y la vida)
+	def __init__ (self, base: float, altura: float, materiales: list, longitud: float) -> object: #TODO replantear parámetros (y la vida)
 		self.base=base
 		self.altura=altura
 		self.materiales=materiales
@@ -18,11 +17,11 @@ class Elemento:								#TODO Clase viga
 		self.recubrimiento=0.06				#TODO Debería importarse de geometria
 		self.d=altura-self.recubrimiento	#Fibra a compresión (d)
 
-	def generarDesdeCarga(self,w):
+	def generarDesdeCarga(self, w: float):
 		self.M=lambda x:w*self.longitud/2*x-w*x**2/2
 		self.V=lambda x:w*self.longitud/2-w*x
 
-	def rhoReq(self,x,phi=0.9):
+	def rhoReq(self,x: float, phi=0.9: float) -> float:
 		fc = self.materiales[0].fc
 		fy = self.materiales[1].fy
 		pcuad = ((fc)/(1.18*fy))**2
