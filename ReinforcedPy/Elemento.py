@@ -21,7 +21,7 @@ class Elemento:								#TODO Clase viga
 		self.M=lambda x:w*self.longitud/2*x-w*x**2/2
 		self.V=lambda x:w*self.longitud/2-w*x
 
-	def rhoReq(self,x: float, phi=0.9: float) -> float:
+	def rhoReq(self,x: float, phi: float = 0.9) -> float:
 		fc = self.materiales[0].fc
 		fy = self.materiales[1].fy
 		pcuad = ((fc)/(1.18*fy))**2

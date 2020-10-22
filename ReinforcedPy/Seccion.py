@@ -1,4 +1,4 @@
-import math
+import numpy as np
 class Seccion():
 	def __init__(self,b,h,varillas,concreto):
 		self.varillas = varillas
@@ -8,7 +8,7 @@ class Seccion():
 
 	def cargaAxial(self, c, compresion=False):
 		self.deformaciones(c)
-		pc = -0.85*(self.concreto.fc)*self.b*self.concreto.b1*c
+		pc = -0.85*(self.concreto.fc*1000)*self.b*self.concreto.b1*c
 		ps = 0
 		for varilla in self.varillas:
 			var = varilla['varilla']
@@ -17,7 +17,20 @@ class Seccion():
 			else:
 				ps += (varilla['e']>0)*var.area*varilla['f']
 		return ps+pc
-
+	def calcularPhi(self):
+		deformaciones = []
+		for varilla in self.varillas:
+			deformaciones.append(varilla['e'])
+		et = np.max(deformaciones)
+		if et>0:
+			if et<=0.002:
+				return 0.65
+			elif et<0.005:
+				return 0.65 + (et-0.002)*250/3
+			else:
+				return 0.9
+		else:
+			return -1
 	def deformaciones(self,c):
 		for varilla in self.varillas:
 			#varila = {'X':x,'Y':y,'varilla':Varilla}
@@ -27,25 +40,26 @@ class Seccion():
 			ey = varilla['varilla'].material.ey
 			dv = self.h-c-coordY
 			varilla['e'] = ecu/c*dv
-			if math.abs(varilla['e']) >= ey:
-				varilla['f'] = 420*varilla['e']/math.abs(varilla['e'])
+			if np.abs(varilla['e']) >= ey:
+				varilla['f'] = varilla['varilla'].material.fy*1000*varilla['e']/np.abs(varilla['e'])
 			else:
 				varilla['f'] = varilla['varilla'].material.E*varilla['e']
+		self.phi = self.calcularPhi()
 
 	def encontrarC(self):
 		x0 = 0.000001
 		xf = self.h
 		xr = (xf +x0)/2
 		for i in range(100):
-			fx0 = cargaAxial(x0)
-			fxf = cargaAxial(xf)
-			fxr = cargaAxial(xr)
-			if fx0*fxr > 0:
-				x0 = xr
-				xf = xf
-			else:
-				x0 = x0
+			fx0 = self.cargaAxial(x0)
+			fxf = self.cargaAxial(xf)
+			fxr = self.cargaAxial(xr)
+			if fx0*fxr < 0:
 				xf = xr
+			else:
+				x0 = xr
+			xr = (xf +x0)/2
+		return xr
 
 	def momentoNominal(self):
 		#EncontrarC
