@@ -7,5 +7,5 @@ class AceroRefuerzo(Material):
 		super().__init__(E,v,gamma=0)
 		self.ey = ey
 		self.fy = fy
-		self.varillas = [{'A':-1,'D':-1},{'A':-1,'D':-1}]
-		
+
+	

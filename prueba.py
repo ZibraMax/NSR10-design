@@ -4,6 +4,7 @@ import ReinforcedPy as rp
 
 concreto28 = rp.Concreto()
 acero420 = rp.AceroRefuerzo()
+varillas = [{'X': 0.06,'Y':0.06,'varilla': rp.Varilla(acero420,6)}]
 
 viga=rp.Elemento(0.3,0.6,[concreto28,acero420],6)
 viga.generarDesdeCarga(50)
@@ -17,6 +18,6 @@ plt.xlabel('Distancia [m]')
 plt.ylabel(r'$\rho$')
 plt.title('Gráfica de Cuantías')
 plt.show()
-print(acero420.varillas[0]['A'])
+print(varillas[0]['varilla'].area)
 
 
