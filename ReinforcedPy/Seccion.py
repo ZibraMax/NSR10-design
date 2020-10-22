@@ -107,6 +107,7 @@ class Seccion():
 		for barra in self.varillas:
 			dibujoBarra = mpatches.Circle((barra['X']-self.b/2,barra['Y']- self.h/2), barra['varilla'].diametro/2,color='black')
 			ax.add_patch(dibujoBarra)
+			ax.annotate('#'+format(barra['varilla'].designacion), (barra['X']-self.b/2,barra['Y']- self.h/2), size=8, textcoords="offset points", xytext=(0, 10), ha='center')
 		ax.set_aspect('equal')
 		plt.axis('off')
 
